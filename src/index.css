@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #0B0E13;
+  --color-surface: #12161D;
+  --color-surface-raised: #171C25;
+  --color-border: #232A35;
+  --color-border-soft: #1A2029;
+  --color-text: #E7EBF1;
+  --color-text-dim: #8A93A3;
+  --color-text-faint: #545E6E;
+  --color-accent: #4CE0C7;
+  --color-accent-soft: #2C6B62;
+  --color-accent-2: #6C7CF0;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: #08110F;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-mono { font-family: var(--font-mono); }
+
+  .grain-bg {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0);
+    background-size: 28px 28px;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 24px rgba(76, 224, 199, 0.25);
+  }
+
+  .card-hover {
+    transition: border-color .25s ease, transform .25s ease, background-color .25s ease;
+  }
+  .card-hover:hover {
+    border-color: var(--color-accent-soft);
+    transform: translateY(-3px);
+  }
+
+  .focus-ring:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
