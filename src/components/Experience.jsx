@@ -3,21 +3,21 @@ import SectionLabel from './SectionLabel'
 
 const EXPERIENCES = [
   {
-    role: 'Freelance Automation Engineer',
+    role: 'Freelance AI Automation Engineer',
     company: 'Independent / Remote',
-    period: 'Currently',
+    period: 'May 2026 - Present',
     location: 'Ecuador',
     type: 'Freelance',
     highlights: [
-      'Designs and implements automation workflows for data extraction, transformation, and integration.',
-      'Builds AI agents for structured information extraction from legal documents and operational data.',
-      'Integrates APIs, databases, and cloud services to reduce manual work and improve reliability.',
+      'Designs and deploys custom RAG pipelines for real-world automation workflows.',
+      'Builds backend microservices with FastAPI and integrates APIs, databases, and cloud services.',
+      'Develops AI agents for structured information extraction and operational processes.',
     ],
   },
   {
-    role: 'Automation Engineer',
+    role: 'Automation Developer & AI Advisor',
     company: 'National Police of Ecuador',
-    period: 'Nov 2025 – Dec 2025',
+    period: 'Nov 2025 - Dec 2025',
     location: 'Ecuador',
     type: 'Temporary Contract',
     highlights: [
@@ -30,7 +30,7 @@ const EXPERIENCES = [
   {
     role: 'Data Analyst Intern',
     company: 'Yachay Tech University, Directorate of Accreditation and Quality Assurance (DAAC)',
-    period: 'Oct 2025 – Jan 2026',
+    period: 'Oct 2025 - Jan 2026',
     location: 'Quito, Ecuador',
     type: 'Pre-professional Internship',
     highlights: [
@@ -38,6 +38,16 @@ const EXPERIENCES = [
       'Collected, cleaned, and analyzed data from multiple university departments.',
       'Automated reports and KPI tracking to support accreditation and decision-making processes.',
       'Presented analytical insights to academic and administrative authorities.',
+    ],
+  },
+  {
+    role: 'Information Technology Engineering',
+    company: 'Yachay Tech University',
+    period: '2021 - 2026',
+    location: 'Ecuador',
+    type: 'Education',
+    highlights: [
+      'Thesis: Hyperparameter optimization in RAG architectures and comparative analysis of orchestration frameworks (LangChain vs. n8n).',
     ],
   },
 ]
@@ -58,12 +68,10 @@ export default function Experience() {
             Experience across data, automation, and AI delivery.
           </h3>
           <p className="text-text-dim leading-relaxed mb-4 max-w-lg">
-            My work has focused on analytics, workflow automation, and practical AI systems across
-            university and institutional environments, with current freelance work building on that
-            foundation.
+            A focused timeline of AI automation, data analysis, and software engineering work.
           </p>
           <p className="text-text-dim leading-relaxed max-w-lg">
-            Below is a summary of the professional experience I want to highlight on the portfolio.
+            Experience and education across research, backend systems, and applied AI.
           </p>
         </motion.div>
 

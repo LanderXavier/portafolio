@@ -38,10 +38,10 @@ const FarmvilleImages = Object.entries(
 const PROJECTS = [
   {
     number: '01',
-    title: 'AI Dental Assistant',
-    subtitle: 'AI-powered conversational assistant for dental clinic automation.',
+    title: 'Intelligent CRM & Scheduling Agent',
+    subtitle: 'Multi-agent assistant for clinic communication and appointment scheduling.',
     desc: 'Developed as a freelance client solution, this intelligent conversational system automates patient registration, appointment scheduling, clinic information retrieval, and treatment-related queries. It was deployed locally on n8n via Docker to accommodate the client\'s requirement to avoid Host costs.',
-    tech: ['Telegram', 'n8n (Local)', 'DeepSeek', 'Supabase', 'Qdrant Cloud', 'RAG', 'AI Agents', 'Docker'],
+    tech: ['n8n', 'Qdrant', 'Telegram', 'Supabase', 'Docker'],
     features: [
       'Patient registration & Telegram ID identification',
       'Conversational state management across sessions',
@@ -53,10 +53,10 @@ const PROJECTS = [
   },
   {
     number: '02',
-    title: 'RAG Legal Chatbot — Galápagos',
-    subtitle: 'Legal consultation chatbot for the Galápagos special regime.',
+    title: 'Galapagos Legal Assistant',
+    subtitle: 'RAG system for regional special-regime legislation - TITEC 2026 paper co-author.',
     desc: 'A Retrieval-Augmented Generation (RAG) chatbot designed to answer complex legal questions. Initially prototyped with n8n for rapid testing, the final system was developed entirely in pure LangChain to ensure precise token management, advanced system prompting, and robust performance.',
-    tech: ['LangChain', 'DeepSeek', 'Qdrant', 'n8n', 'RAG'],
+    tech: ['Gemini', 'Qdrant', 'n8n', 'LangChain', 'RAG'],
     features: [
       'Developed a specialized RAG pipeline to accurately query and interpret the Galápagos legal framework',
       'Built an initial visual prototype using n8n to validate the data flow and orchestration logic before coding',
@@ -67,6 +67,34 @@ const PROJECTS = [
   },
   {
     number: '03',
+    title: 'Mood Mirror',
+    subtitle: 'Flutter mobile app for sentiment analysis and facial emotion recognition.',
+    desc: 'A mobile journaling application built with Flutter and connected to FastAPI for sentiment analysis and facial emotion recognition, helping users track emotional well-being over time.',
+    tech: ['Flutter', 'FastAPI', 'Sentiment Analysis', 'Facial Emotion Recognition'],
+    features: [
+      'Analyzes sentiment in daily journal entries',
+      'Recognizes facial emotions from user-submitted photos',
+      'Connects a Flutter mobile experience to a FastAPI backend',
+      'Visualizes mood evolution over time',
+    ],
+    images: MoodImages,
+  },
+  {
+    number: '04',
+    title: 'Farmville YT',
+    subtitle: 'IoT telemetry system - 3rd place at Comufest 2026.',
+    desc: 'An IoT telemetry system using a Raspberry Pi with the PREEMPT_RT kernel, Arduino sensors, and React Native dashboards for real-time agricultural monitoring. Awarded 3rd place at Comufest 2026.',
+    tech: ['Raspberry Pi', 'Linux PREEMPT_RT', 'Arduino', 'React Native', 'FastAPI'],
+    features: [
+      'Collects real-time environmental telemetry from Arduino sensors',
+      'Uses a low-latency Raspberry Pi runtime with PREEMPT_RT',
+      'Displays live metrics through a React Native application',
+      'Won 3rd place at the Comufest 2026 innovation contest',
+    ],
+    images: FarmvilleImages,
+  },
+  {
+    number: '05',
     title: 'Kiwcha APP',
     subtitle: 'Gamified, Duolingo-style mobile app for interactive Kichwa learning.',
     desc: 'A Duolingo-style mobile application designed for learning the Kichwa language. Developed as a community outreach (vinculación) project at Yachay Tech, utilizing local JSON files for lightweight, offline data storage.',
@@ -78,37 +106,6 @@ const PROJECTS = [
       'Contributed as a core programmer for a university outreach (vinculación) initiative at Yachay Tech',
     ],
     images: KichwaImages,
-  },
-  {
-    number: '04',
-    title: 'Mood Mirror',
-    subtitle: 'AI-powered smart diary & mood tracker.',
-    desc: 'An intelligent daily journaling application that combines text sentiment analysis and facial emotion recognition to track mental well-being over time. It features visual dashboards and automatically suggests support contacts when distress is detected.',
-    tech: ['Flutter', 'FastAPI', 'SQLite', 'Applied AI Models'],
-    features: [
-      'Smart journaling system with text-based sentiment analysis for daily mood tracking',
-      'Facial emotion recognition using AI models to analyze user-submitted daily photos',
-      'Interactive visual dashboards to monitor mood evolution and well-being patterns',
-      'Automated safety feature that provides emergency contact numbers during critical situations',
-      'Dual-backend architecture utilizing local SQLite for fast data storage and FastAPI for AI model inference',
-    ],
-    images: MoodImages,
-  },
- {
-    number: '05',
-    title: 'Farmville YT',
-    subtitle: 'Functional IoT plant monitoring prototype.',
-    desc: 'A fully functional physical and software prototype of an IoT-based smart agricultural system designed to monitor and automate plant care. Showcased as a working live demo, it was awarded 3rd place at the Comufest 2026 competition at Yachay Tech.',
-    tech: ['React Native', 'FastAPI', 'Raspberry Pi', 'Arduino', 'IoT'],
-    features: [
-      'Developed a fully working physical hardware demo and a functional mobile app prototype',
-      'Integrated Arduino with environmental sensors (soil moisture, air humidity, temperature, pH) to monitor small-scale crops',
-      'Automated hardware actuators, including irrigation systems and ventilation, based on real-time sensor readings',
-      'Developed a lightweight FastAPI backend hosted on a Raspberry Pi to collect and process telemetry data',
-      'Built a cross-platform mobile frontend using React Native to display real-time metrics on interactive dashboards',
-      'Secured 3rd place at the Yachay Tech Comufest 2026 innovation contest through a successful live demonstration',
-    ],
-    images: FarmvilleImages,
   },
 ]
 

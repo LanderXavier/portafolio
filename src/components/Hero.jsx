@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from './BrandIcons'
+import { GithubIcon } from './BrandIcons'
 import heroImage from '../assets/hero.png'
 
-const INDICATORS = ['AI & LLMs', 'RAG Systems', 'AI Automation', 'Python','Data Science']
+const INDICATORS = ['RAG Architectures', 'AI Automation', 'Data Engineering', 'Python', 'Backend APIs']
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -82,7 +82,7 @@ export default function Hero() {
             variants={fadeUp}
             className="font-mono text-base sm:text-lg text-text-dim mt-5"
           >
-            AI Engineer · AI Automation · RAG Developer
+            AI & Automation Engineer
           </motion.h2>
 
           <motion.p
@@ -92,8 +92,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-text-dim mt-6 max-w-lg leading-relaxed"
           >
-            I build intelligent solutions by combining Artificial Intelligence, Large Language
-            Models, RAG systems, automation, and software development.
+            I build intelligent solutions by combining Artificial Intelligence, Large Language Models, RAG systems, automation, and software development.
           </motion.p>
 
           <motion.div
@@ -129,9 +128,10 @@ export default function Hero() {
             <a href="https://github.com/LanderXavier" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-text-dim hover:text-text transition-colors focus-ring">
               <GithubIcon size={19} />
             </a>
-            <a href="https://linkedin.com/in/lander-lliguicota" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-text-dim hover:text-text transition-colors focus-ring">
-              <LinkedinIcon size={19} />
+            <a href="https://landerxavier.github.io/portafolio/" target="_blank" rel="noreferrer" className="font-mono text-[11px] text-text-dim hover:text-text transition-colors focus-ring">
+              Portfolio
             </a>
+            <span className="font-mono text-[11px] text-text-dim">Quito, Ecuador</span>
           </motion.div>
 
           <motion.div

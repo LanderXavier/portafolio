@@ -3,30 +3,26 @@ import SectionLabel from './SectionLabel'
 
 const GROUPS = [
   {
-    title: 'AI & LLMs',
-    items: ['LLMs', 'RAG', 'AI Agents', 'LangChain', 'Machine Learning', 'Deep Learning', 'Training Models'],
+    title: 'Core AI & LLMs',
+    items: ['RAG Architectures', 'LangChain', 'LangGraph', 'n8n AI Agents', 'Prompt Engineering'],
   },
   {
-    title: 'Automation',
-    items: ['n8n', 'Webhooks', 'REST APIs', 'Bots', 'Langchain Agents'],
+    title: 'Backend & Vector DBs',
+    items: ['Python (FastAPI, Flask)', 'Qdrant (Vector DB)', 'Supabase', 'PostgreSQL', 'REST APIs'],
   },
   {
-    title: 'Languages & Frameworks',
-    items: ['Python', 'JavaScript', 'C++', 'Flutter', 'React', 'Node.js', 'FastAPI', 'Backend Development'],
+    title: 'Computer Vision & ML',
+    items: ['PyTorch', 'Hugging Face', 'YOLOv8', 'OpenCV', 'MediaPipe'],
   },
   {
-    title: 'Databases & Vector Stores',
-    items: ['MySQL', 'PostgreSQL', 'Pinecone', 'MongoDB', 'Supabase'],
+    title: 'DevOps & Environments',
+    items: ['Docker', 'Docker Compose', 'Linux/Bash', 'Github'],
   },
   {
-    title: 'Infra, Tools & Process',
-    items: ['Docker', 'Kubernetes', 'Git', 'Linux Expertise', 'Scrum'], 
+    title: 'Complementary Development',
+    items: ['Flutter', 'React', 'Webhooks', 'SQL'],
   },
-  {
-    title: 'Data Analysis',
-    items: ['EDA', 'Data Analysis', 'Data Visualization', 'Pandas', 'Matplotlib', 'R', 'Data cleaning and extraction'], 
-  },
-];
+]
 
 export default function Skills() {
   return (
