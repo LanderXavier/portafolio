@@ -75,7 +75,7 @@ const PROJECTS = [
     title: 'Conversational Sales Registration Assistant',
     subtitle: 'Messaging sales automation with AI extraction and PostgreSQL.',
     desc: 'Developed as a freelance client solution, this conversational assistant lets salespeople register sales by text message and receipt photos. A state machine merges multi-message drafts, an interchangeable LLM extracts amount, payment method, customer and reference, and everything is stored idempotently in PostgreSQL with owner reports and automatic notifications.',
-    tech: ['FastAPI', 'PostgreSQL', 'Gemini', 'WhatsApp', 'Docker'],
+    tech: ['FastAPI', 'PostgreSQL', 'Gemini', 'WhatsApp', 'Docker', 'LangChain', 'LangGraph'],
     features: [
       'Conversational sales registration via text and receipt photos',
       'Automatic extraction of amount, method, customer and reference',
