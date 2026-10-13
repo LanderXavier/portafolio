@@ -30,6 +30,11 @@ const FarmvilleImages = Object.entries(
 )
   .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath, undefined, { numeric: true }))
   .map(([, imageUrl]) => imageUrl)
+const VentasImages = Object.entries(
+  import.meta.glob('../assets/ventas/*', { eager: true, import: 'default' })
+)
+  .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath, undefined, { numeric: true }))
+  .map(([, imageUrl]) => imageUrl)
 
 
 
@@ -67,6 +72,22 @@ const PROJECTS = [
   },
   {
     number: '03',
+    title: 'Asistente Conversacional para Registro de Ventas',
+    subtitle: 'Automatización de ventas por mensajería con extracción IA y PostgreSQL.',
+    desc: 'Developed as a freelance client solution, this conversational assistant lets salespeople register sales by text message and receipt photos. A state machine merges multi-message drafts, an interchangeable LLM extracts amount, payment method, customer and reference, and everything is stored idempotently in PostgreSQL with owner reports and automatic notifications.',
+    tech: ['FastAPI', 'PostgreSQL', 'Gemini', 'WhatsApp', 'Docker'],
+    features: [
+      'Conversational sales registration via text and receipt photos',
+      'Automatic extraction of amount, method, customer and reference',
+      'Draft merging across messages, asking only for missing data',
+      'Idempotency plus logical duplicate detection by reference',
+      'Daily totals, per-seller reports, review queue and owner alerts',
+    ],
+    images: VentasImages,
+    github: 'https://github.com/LanderXavier/bot_ventas',
+  },
+  {
+    number: '04',
     title: 'Mood Mirror',
     subtitle: 'Flutter mobile app for sentiment analysis and facial emotion recognition.',
     desc: 'A mobile journaling application built with Flutter and connected to FastAPI for sentiment analysis and facial emotion recognition, helping users track emotional well-being over time.',
@@ -80,7 +101,7 @@ const PROJECTS = [
     images: MoodImages,
   },
   {
-    number: '04',
+    number: '05',
     title: 'Farmville YT',
     subtitle: 'IoT telemetry system - 3rd place at Comufest 2026.',
     desc: 'An IoT telemetry system using a Raspberry Pi with the PREEMPT_RT kernel, Arduino sensors, and React Native dashboards for real-time agricultural monitoring. Awarded 3rd place at Comufest 2026.',
@@ -94,7 +115,7 @@ const PROJECTS = [
     images: FarmvilleImages,
   },
   {
-    number: '05',
+    number: '06',
     title: 'Kiwcha APP',
     subtitle: 'Gamified, Duolingo-style mobile app for interactive Kichwa learning.',
     desc: 'A Duolingo-style mobile application designed for learning the Kichwa language. Developed as a community outreach (vinculación) project at Yachay Tech, utilizing local JSON files for lightweight, offline data storage.',
@@ -357,6 +378,18 @@ function ProjectModal({ project, activeIndex, onClose, onPrevious, onNext, onSel
                 </span>
               ))}
             </div>
+
+            {project.github ? (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 font-mono text-xs px-4 py-2.5 rounded-full border text-white transition-colors hover:text-red-500"
+                style={{ borderColor: 'var(--color-border)', backgroundColor: 'rgba(255,255,255,0.03)' }}
+              >
+                <GithubIcon size={14} /> view on github ↗
+              </a>
+            ) : null}
 
           </div>
         </div>

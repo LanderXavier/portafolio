@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+<rect width="800" height="1000" rx="32" fill="#0b0e13"/>
+<rect x="40" y="40" width="720" height="920" rx="24" fill="#11151c" stroke="#232a35" stroke-width="2"/>
+<!-- header -->
+<rect x="40" y="40" width="720" height="96" rx="24" fill="#161c25"/>
+<rect x="40" y="100" width="720" height="36" fill="#161c25"/>
+<circle cx="110" cy="88" r="26" fill="#22c55e"/>
+<text x="110" y="96" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#0b0e13">✓✓</text>
+<text x="152" y="82" font-family="sans-serif" font-size="22" font-weight="700" fill="#fff">Asistente de Ventas</text>
+<text x="152" y="106" font-family="monospace" font-size="14" fill="#22c55e">● en línea · responde en segundos</text>
+<!-- bubbles -->
+<g font-family="sans-serif" font-size="19">
+<rect x="310" y="170" width="390" height="72" rx="16" fill="#1d4ed8"/>
+<text x="335" y="198" fill="#fff">Vendí una camisa $20 por</text>
+<text x="335" y="222" fill="#fff">transferencia 📸 [comprobante]</text>
+<text x="655" y="232" font-size="12" fill="#bfdbfe">10:24</text>
+<rect x="100" y="262" width="440" height="72" rx="16" fill="#1f2937"/>
+<text x="125" y="290" fill="#fff">¡Anotado! ¿A nombre de quién</text>
+<text x="125" y="314" fill="#fff">fue la compra?</text>
+<rect x="310" y="354" width="390" height="48" rx="16" fill="#1d4ed8"/>
+<text x="335" y="384" fill="#fff">A nombre de María Pérez</text>
+<rect x="100" y="422" width="460" height="110" rx="16" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+<text x="125" y="452" fill="#4ade80" font-weight="700">✅ Venta guardada</text>
+<text x="125" y="480" fill="#d1fae5">$20.00 · transferencia · María Pérez</text>
+<text x="125" y="506" fill="#6ee7b7" font-size="15">Ref: 88213 · Notificado al dueño 🔔</text>
+<rect x="100" y="562" width="600" height="110" rx="16" fill="#1f2937"/>
+<text x="125" y="592" fill="#fff" font-weight="700">📊 Reporte de hoy (dueño)</text>
+<text x="125" y="620" fill="#cbd5e1">3 ventas — Total $86.50</text>
+<text x="125" y="646" fill="#cbd5e1" font-size="16">• $20.00 transferencia — María  • $36.50 efectivo…</text>
+<rect x="100" y="692" width="600" height="72" rx="16" fill="#451a1a"/>
+<text x="125" y="722" fill="#fca5a5">⚠️ Ese comprobante ya estaba registrado.</text>
+<text x="125" y="746" fill="#fecaca" font-size="15">Marcado para revisión · sin duplicados</text>
+</g>
+<!-- input -->
+<rect x="100" y="830" width="480" height="60" rx="30" fill="#1f2937"/>
+<text x="130" y="866" font-family="sans-serif" font-size="18" fill="#6b7280">Escribe la venta…</text>
+<circle cx="630" cy="860" r="30" fill="#22c55e"/>
+<text x="630" y="869" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#0b0e13">➤</text>
+<text x="400" y="935" text-anchor="middle" font-family="monospace" font-size="13" fill="#4b5563">texto + foto → extracción IA → PostgreSQL</text>
+</svg>

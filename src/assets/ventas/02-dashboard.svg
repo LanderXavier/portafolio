@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" rx="32" fill="#0b0e13"/>
+<rect x="40" y="40" width="1120" height="720" rx="24" fill="#11151c" stroke="#232a35" stroke-width="2"/>
+<text x="80" y="110" font-family="sans-serif" font-size="26" font-weight="800" fill="#fff">Panel de Ventas — Hoy</text>
+<text x="80" y="136" font-family="monospace" font-size="14" fill="#6b7280">FastAPI · PostgreSQL · Webhook + BackgroundTasks</text>
+<g font-family="sans-serif">
+<rect x="80" y="160" width="340" height="120" rx="16" fill="#1f2937"/>
+<text x="104" y="196" font-size="15" fill="#9ca3af">VENTAS HOY</text>
+<text x="104" y="236" font-size="38" font-weight="800" fill="#fff">12 · $486.50</text>
+<rect x="440" y="160" width="340" height="120" rx="16" fill="#1f2937"/>
+<text x="464" y="196" font-size="15" fill="#9ca3af">POR VENDEDOR</text>
+<text x="464" y="230" font-size="19" fill="#fff">Juan: $210 (5) · Ana: $276.50 (7)</text>
+<rect x="800" y="160" width="320" height="120" rx="16" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+<text x="824" y="196" font-size="15" fill="#4ade80">POR REVISAR</text>
+<text x="824" y="236" font-size="38" font-weight="800" fill="#4ade80">1 caso 🔎</text>
+<!-- table -->
+<rect x="80" y="300" width="1040" height="380" rx="16" fill="#161c25"/>
+<text x="104" y="336" font-size="14" font-family="monospace" fill="#6b7280">HORA · MONTO · MÉTODO · CLIENTE · ESTADO</text>
+<g font-size="18" fill="#e5e7eb">
+<text x="104" y="376">10:24 · $20.00 · transferencia · María Pérez · ✅ confirmado</text>
+<text x="104" y="414">11:02 · $36.50 · efectivo · — · ✅ confirmado</text>
+<text x="104" y="452">11:47 · $15.00 · transferencia · Ref 88213 · ⚠️ revisión</text>
+<text x="104" y="490">12:15 · $50.00 · transferencia · Carlos Ruiz · ✅ confirmado</text>
+</g>
+<rect x="104" y="520" width="992" height="120" rx="12" fill="#0b0e13" stroke="#232a35" stroke-width="1.5"/>
+<text x="124" y="552" font-family="monospace" font-size="14" fill="#4ade80">flujo: mensaje → borrador (TTL 15min) → IA completa datos → confirma</text>
+<text x="124" y="578" font-family="monospace" font-size="14" fill="#9ca3af">idempotencia por mensaje + anti-duplicado por referencia · roles: dueño / vendedor</text>
+<text x="124" y="604" font-family="monospace" font-size="14" fill="#9ca3af">canal y LLM intercambiables · Docker + Postgres</text>
+</g>
+</svg>

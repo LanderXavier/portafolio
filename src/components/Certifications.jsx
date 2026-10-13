@@ -21,6 +21,21 @@ const CERTS = [
     issuer: 'Samsung Innovation Campus · 200 hours · 2025',
     image: certImages.ia,
   },
+  {
+    title: 'AI Agents Fundamentals',
+    issuer: 'Hugging Face · Ago 2026',
+    image: null,
+  },
+  {
+    title: 'Introduction to Model Context Protocol (MCP)',
+    issuer: 'Anthropic · Sep 2026',
+    image: null,
+  },
+  {
+    title: 'Claude Code in Action',
+    issuer: 'Anthropic · Sep 2026',
+    image: null,
+  },
 ]
 
 export default function Certifications() {
@@ -105,12 +120,18 @@ export default function Certifications() {
             </div>
 
             <div className="flex items-center justify-center p-4 sm:p-6 bg-[#0b0e13]">
+              {selectedCert.image ? (
               <img
                 src={selectedCert.image}
                 alt={selectedCert.title}
                 className="block max-h-[calc(90vh-8rem)] max-w-full w-auto h-auto object-contain"
                 draggable="false"
               />
+              ) : (
+                <p className="font-mono text-sm text-white/60 px-6 py-10 text-center">
+                  Certificado sin imagen — pendiente de subir el PDF/diploma.
+                </p>
+              )}
             </div>
           </div>
         </div>
